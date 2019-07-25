@@ -1,21 +1,38 @@
-# GenericSerializer
+# Generic serializer
 
-**TODO: Add description**
+Library for format maps and list in response controller
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `generic_serializer` to your list of dependencies in `mix.exs`:
-
 ```elixir
+
 def deps do
-  [
-    {:generic_serializer, "~> 0.1.0"}
-  ]
+  [{:kv, git: "http://gitlab.peiky.com/helpers/serializer.git"}]
 end
+
+next update dependencies :
+
+mix deps.get
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/generic_serializer](https://hexdocs.pm/generic_serializer).
+## Usage
 
+```elixir
+alias  GenericSerializer
+
+For list :
+   GenericSeralizer.generic_list("here send to list")
+
+For maps :
+   GenericSeralizer.generic_map("here send to map")
+```
+
+## use it and enjoy it ....
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)

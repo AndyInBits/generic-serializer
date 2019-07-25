@@ -12,6 +12,7 @@ defmodule GenericSerializer do
       :world
 
   """
+
   def generic_list(list) when is_list(list) do
     Enum.map(list, fn f -> generic_map(f) end)
   end
