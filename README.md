@@ -7,7 +7,7 @@ Library for format maps and list in response controller
 ```elixir
 
 def deps do
-  [{:kv, git: "http://gitlab.peiky.com/helpers/serializer.git"}]
+  [{:generic_serializer, git: "https://github.com/Anfevazu/generic-serializer.git"}]
 end
 
 next update dependencies :
